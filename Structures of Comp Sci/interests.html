@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="PersonalSite.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Buttler.hobbies</title>
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="interests.html">Interests</a>
+        <a href="hidden gem.html">Hidden Gem</a>
+        <a href="timecapsule.html">Time Capsule</a>
+        <a href="howto.html">How To:</a>
+        
+    </nav>
+
+<div id="contentinterests">
+    <span>Interests</span>
+    <p>I am very interested in what the future for humanity will look like in terms of developments in physics, computing, and biomedical sciences. As I look forward to a career after Fordham I am drawn towards working in venture capital, private equity, and quantitative analysis in the stock market. These career paths would allow me to work in my areas of interest while being able to affect the future by investing in companies that matter.</p>
+</div>
+
+<div id="interestblocks">
+    <div class="carousel-arrow left-arrow"></div>
+    <div class="carousel">
+        <div class="interest-block">
+            <img src="images/Spacexlaunch.jpg" alt="">
+            <div class="interest-text">
+                <h3>Physics</h3>
+                <p>As we begin the quest to make life multiplanetary I wonder if we will make sufficient advances in theoretical physics to traverse the universe and go beyond our solar system.</p>
+            </div>
+        </div>
+        <div class="interest-block">
+            <img src="images/attention mechanism.png" alt="" class="wide-image">
+            <div class="interest-text">
+                <h3>Computing</h3>
+                <p>An image of the formula for the attention mechanism. This equation made the artificial intelligence that we have today possible. I think it is safe to say this holds a similar weight to Einsteins field equations in terms of how much it has and will change humanity. </p>
+            </div>
+        </div>
+        <div class="interest-block">
+            <img src="images/dna.jpg" alt="">
+            <div class="interest-text">
+                <h3>Biomedical Sciences</h3>
+                <p>With the advent of gene therapies and gene editing we are close to unlocking a new world of personalized healthcare for everyone. While the nature of this work must be navigated in an ethical way it inspires me to think of a world with greater lifespan and fewer ailments affecting the population as a whole.</p>
+            </div>
+        </div>
+        <div class="interest-block">
+            <img src="images/augustaNational.jpg" alt="">
+            <div class="interest-text">
+                <h3>Golf</h3>
+                <p>Golf is a sport that I am quite bad at, love to play, and do not have the time to play.</p>
+            </div>
+        </div>
+        <div class="interest-block">
+            <img src="images/backpacking.jpg" alt="">
+            <div class="interest-text">
+                <h3>Hiking</h3>
+                <p>I enjoy spending time in nature away from all the screens in our lives. I have two trips planned this year one in upstate New York and one in the White Mountains in New Hampshire. </p>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-arrow right-arrow"></div>
+</div>
+<script>
+const carousel = document.querySelector('.carousel');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+const scrollAmount = 400;
+
+leftArrow.addEventListener('click', () => {
+    carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+
+rightArrow.addEventListener('click', () => {
+    carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+</script>
+</body>
+
+</html>
